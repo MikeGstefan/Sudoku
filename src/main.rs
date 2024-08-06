@@ -1,11 +1,11 @@
+
 use board::Board;
 
 
 mod cell;
 mod board;
 
+slint::include_modules!();
 fn main() {
-    let board = Board::new();
-
-    println!("{}", board);
+    MainWindow::new().unwrap().run().unwrap();
 }
